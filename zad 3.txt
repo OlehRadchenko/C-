@@ -1,0 +1,22 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    int liczba_losowa,suma;
+    srand(time(NULL));
+    for(int i=0; i<100; i++){
+        
+        cout<<rand()%101<<endl;
+        if(rand()%101%2 == 0)
+        {suma+=rand()%101;
+        }
+        else{}
+    }
+    cout<<"Suma to:"<<suma;
+
+    return 0;
+}

@@ -1,0 +1,28 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    int liczba_losowa,suma;
+    srand(time(NULL));
+    for(int i=0; i<100; i++){
+        
+        cout<<rand()%101<<endl;
+        if(rand()%101%3 == 0)
+        {suma+=rand()%101;
+        }
+        else{}
+    }
+    suma=suma/2;
+    if(suma%2==0){
+        cout<<"Suma jest parzysta i jest to:"<<suma;
+    }
+    else{
+        cout<<"Suma nie jest parzysta i jest to:"<<suma;
+    }
+
+    return 0;
+}

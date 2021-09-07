@@ -1,0 +1,17 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    int liczba_losowa;
+    srand(time(NULL));
+    for(int i=0; i<100; i++){
+        
+        cout<<rand()%101<<endl;
+    }
+
+    return 0;
+}
