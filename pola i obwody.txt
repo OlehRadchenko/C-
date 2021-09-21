@@ -1,0 +1,80 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+void pole_trapezu(float a, float b, float h) {
+    cout << (a + b) * h / 2 << endl;
+}
+void obwod_trapezu(float a, float b, float h) {
+    float z, c;
+    if (a < b)
+    {
+        cout << "Ten trapez nie jest rownoramienny :c" << endl;
+    }
+    else {
+        z = (a - b) / 2;
+        c = sqrt(h * h + z * z);
+
+        cout << a + b + c * 2 << endl;
+        cout << "a = " << a << endl;
+        cout << "b = " << b << endl;
+        cout << "Boki = " << c << endl;
+    }
+}
+void pole_kwadratu(float a) {
+    cout << endl;
+    cout << endl;
+    cout << "Pole kwadratu = " << a * a << endl;
+}
+void obwod_kwadratu(float a) {
+    cout << "Obwod kwadratu = " << a * 4 << endl;
+}
+void pole_prostokata(float a,float b) {
+    cout << endl;
+    cout << endl;
+    cout << "Pole prostokata = " << a * b << endl;
+}
+void obwod_prostokata(float a,float b) {
+    cout << "Obwod prostokata = " << a*2 + b*2 << endl;
+}
+void pole_trojkata(float a, float b, float h) {
+    cout << endl;
+    cout << endl;
+    cout << "Pole trojkata = " << a * h /2 << endl;
+}
+void obwod_trojkata(float a, float b, float d) {
+    cout << "Obwod trojkata = " << a + b + d << endl;
+}
+
+
+
+int main()
+{
+    float a, b, h, d;
+
+    cout << "Podaj bok a:";
+    cin >> a;
+    cout << "Podaj bok b:";
+    cin >> b;
+    cout << "Podaj bok c(dla trojkata):";
+    cin >> d;
+    cout << "Podaj h:";
+    cin >> h;
+    cout << "Pole trapezu:";
+    pole_trapezu(a, b, h);
+    cout << "Obwod trapezu:";
+    obwod_trapezu(a, b, h);
+    cout << "Pole trapezu:";
+
+
+    pole_kwadratu(a);
+    obwod_kwadratu(a);
+
+
+    pole_prostokata(a, b);
+    obwod_prostokata(a, b);
+
+    pole_trojkata(a, b, h);
+    obwod_trojkata(a, b, d);
+}

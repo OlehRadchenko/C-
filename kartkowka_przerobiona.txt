@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+void kartkowka(){
+int tab[5];
+	for (int i = 0; i < 5;i++) {
+			cout << "Podaj liczbe:";
+			cin >> tab[i];
+	}
+	
+	for (int i = 0; i < 5; i++) {
+		if (tab[i]%5==0) {
+			cout << tab[i] <<"\t";
+		}
+}
+
+int main()
+{
+	kartkowka();
+	}
