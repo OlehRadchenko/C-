@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+//za pomocą funkccji void oblicz wartość c z twierdzenia pitagorasa, wyświetl wynik 
+
+void Pitagoras(float a, float b) {
+    float c;
+    c = sqrt(a * a + b * b);
+    cout << "Wynik to = " << c << endl;
+}
+
+int main()
+{
+    float a, b;
+
+
+    cout << "Wprowadz a = ";
+    cin >> a;
+    cout << "Wprowadz b = ";
+    cin >> b;
+    Pitagoras(a, b);
+
+}

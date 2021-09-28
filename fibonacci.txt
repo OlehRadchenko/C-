@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int fibon(int n) {
+    if(n==0){
+        return 0;
+    }
+    else if(n==1){
+        return 1;
+    }
+    else {
+        return fibon(n - 1) + fibon(n - 2);
+    }
+
+}
+
+int main()
+{
+    int n;
+    cout << "Wprowadz liczbe = ";
+    cin >> n;
+    cout << "Wynik to " << fibon(n);
+    
+}

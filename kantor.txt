@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+
+void kantor(float zl) {
+    int wybor;
+    cout << "A w (1. Dolarach, 2.Euro, 3. ,4. ,5. ,6. ,7. ,8. ,9. ,10. ) jest to"<<endl;
+    cin >> wybor;
+    switch (wybor) {
+    case 1: {
+        cout <<"W dolarach to " << zl * 3.96 << endl;
+    }
+    case 2: {
+        cout << "W euro to " << zl * 4.62 << endl;
+    }
+    case 3: {
+
+    }
+    case 4: {
+
+    }
+    case 5: {
+
+    }
+    case 6: {
+
+    }
+    case 7: {
+
+    }
+    case 8: {
+
+    }
+    case 9: {
+
+    }
+    case 10: {
+
+    }
+    }
+}
+
+int main()
+{
+    int zl;
+    cout << "Podaj w zl: ";
+    cin >> zl;
+    kantor(zl);
+    
+}
