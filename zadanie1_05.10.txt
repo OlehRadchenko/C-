@@ -1,0 +1,52 @@
+#include <iostream>
+#include <ctime>
+
+
+using namespace std;
+
+string zyczenia() {
+    string zyczenia_na_urodziny[5] = { 
+        "A więc zdrowia… bo w metryce znów przybyło -;)",
+        "Aby wszystkie fajne dni w żółwim tempie upływały, by co dzień uśmiechał się do Ciebie świat cały, by nigdy nie było porannej pobudki i wiał wiatr co rozwiewa smutki.",
+        "Bardzo wielkiego tortu urodzinowego, świeczek zapalonych, marzeń spełnionych, prezentów bez liku.",
+        "Bukiet najwspanialszych życzeń: uśmiechu i szczęścia, radości każdego dnia oraz wszelkiej pomyślności.",
+        "Dużo szczęścia i radości, które niechaj zawsze gości w dobrym sercu, jasnej duszy i niech wszystkie żale głuszy." };
+    string zyczenia_na_dzien_nauczyciela[5] = {
+        "Z okazji jakże ważnego święta, chcielibyśmy złożyć najserdeczniejsze życzenia... By czasu starczyło na wszystko, aby w sukcesy obrodziło, a to co dobre na lepsze się zmieniło...",
+        "Dziękuję za pokazanie, że porażki mogą mnie czegoś pożytecznego nauczyć, że gdy przeżywam trudności, mogę odkryć swą siłę, że miłość i życzliwość często można znaleźć w najciemniejsze dni.",
+        "Kochani Nauczyciele, bądźcie wciąż z nami! Czy jesteśmy duzi czy jeszcze mali. Życzymy Wam szczęścia na następne lata - niech żyje i rozkwita nasza oświata!!!",
+        "Dziękujemy za trud włożony w nasze wychowanie, za poświęcony czas i przekazaną wiedzę, za każdY pierwszy krok wprowadzający nas w krąg nowych, nieznanych spraw, za uśmiech, serce i cierpliwość...",
+        "Dziękujemy za pokazanie nam, że porażki mogą nas czegoś pożytecznego nauczyć, że gdy przeżywamy trudności, możemy odkryć swą siłę, że miłość i życzliwość często znajdujemy w najciemniejsze dni." };
+    string zyczenia_na_roczek[5] = {
+        "Masz już roczek, to jest coś! Teraz jesteś niezły gość! Śmiej się dużo, smuć się mało, A coś pięknego będzie w Twoim sercu grało, To szczęście, to radość, to pokój, Żyj dobrze, a zawsze będziesz w życiu mieć spokój!",
+        "Dzisiaj mija rok od najpiękniejszego dnia w życiu Twoich rodziców, Dokładnie rok temu rozpocząłeś piękny dar, jakim jest życie. Życzę Ci, byś był dalej tak wspaniałym i kochanym chłopcem, Świetnie się rozwijał i był pociechą dla Twoich bliskich. Niech Twoje życie będzie pełne przygód i niezapomnianych wrażeń A Twoje dzieciństwo – najpiękniejsze lata życia – trwały jak najdłużej.",
+        "Dziś są Twoje urodziny! Bądź radosny i szczęśliwy! Nie bój się niczego, tutaj nie ma nic strasznego. Tylko prezentów gromada! Od mamy, taty i sąsiada! Kumpli jest już cała masa, zaczynaj zabawę! Na to czeka cała baza!",
+        "Ile słoników jest na pierzynce, ile samochodzików w drewnianej skrzynce, ile gwiazdek jest na niebie, tyle wiary miej wciąż w siebie Takie oto me życzenia w pierwszą rocznicę Twego urodzenia.",
+        "Urodzinki pierwsze masz Wśród rodziny gwiazdę grasz Pierwsze słowa, pierwsze kroki To dzieciństwa są uroki Rośnij zdrowo, nie płacz wcale Poznawaj świat wytrwale." };
+    string zyczenia_slubne[5] = { 
+        "Na drodze życia są światła i mroki, raz szczęście jasne, raz smutek głęboki, ale gdy razem się idzie we dwoje, łatwiej się znosi nawet ciężkie znoje.",
+        "Co miłość łączy, Niech Bóg błogosławi. W tym krótkim słowie, Na nowej drodze życia.",
+        "Niech ta nowa dla Was droga, życie Wasze wypogodzi! W sercu ludzi, w łasce Boga, niech Wam każda chwila schodzi.",
+        "Szczęśliwa Młoda Paro - życzymy Wam w uroczystym dniu ślubu miłości gorącej jak słońce, szlachetnej jak złoto, czystej jak łza, słodkiej jak miód oraz spełnienia pięknych marzeń i wspólnych planów.",
+        "Młodej parze składamy najserdeczniejsze życzenia, wielu bożych łask w ich wspólnym życiu." };
+    string zyczenia_na_dzien_ojca[5] = {
+        "Tatusiu Drogi, w dniu Twego święta mocno Cię całuję, zdrowia, dostatku, dzisiaj Ci Tatku gorąco winszuję."
+        "Kochany Tatku, w dniu Twojego święta kochająca córcia o Tobie pamięta. Życzę Ci przede wszystkim dużo zdrowia, szczęścia, spełnienia marzeń oraz wiele radości i uśmiechów na każdy dzień."
+        "Kochany Tatusiu, dziękuję za trud włożony w wychowanie mnie, za wszystkie Twoje dobre rady, za Twoją obecność w trudnych chwilach i za to że jesteś! Kocham Cię Ojcze!"
+        "Kochany tato - zacznę zwyczajnie, że z Tobą w domu zawsze jest fajnie : i w deszcz i w słotę, w smutku, w radości, wspierasz i uczysz życia w miłości. Dzisiaj za wszystko chcę Ci dziękować, skromny bukiecik kwiatów darować."
+        "Płynie Wisła, płynie, w wodzie rybki kryje, niechaj nasz tata sto lat nam żyje!"
+    };
+    string rand_zycz;
+    int liczba_losowa;
+    srand(time(NULL));
+    liczba_losowa = rand() % (5 + 1);
+    string []
+    
+}
+
+int main()
+{
+    for (int i; i = 1; i <= 5) {
+        zyczenia();
+    }
+}
