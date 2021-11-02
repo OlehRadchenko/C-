@@ -1,0 +1,205 @@
+#include <iostream>
+
+using namespace std;
+
+struct postac {
+    string skill;
+    int HP;
+    int def;
+    int mana;
+    int stamina;
+    int damamge;
+    int lucky;
+    int gold;
+    int regeneracja{
+        //mana -= 20;
+        //stamina -= 10;
+        HP += 10;
+        return HP;
+    }
+    int regeneracja++{
+        //mana -= 35;
+        //stamina -= 10;
+        HP += 20;
+        return HP;
+    }
+    int czolg{
+        //mana -= 5;
+        //stamina -= 15;
+        HP += 40;
+        return HP;
+    }
+    int czolg++{
+        //mana -= 10;
+        //stamina -= 30;
+        HP += 50;
+        return HP;
+    }
+    int termowizja{
+        //mana -= 30;
+        //stamina -= 20;
+        damamge += 40;
+    return damamge;
+    }
+    int FLOPPA{
+        //stamina -= 5;
+        def += 20;
+        return def;
+    }
+    int KARRR{
+        damage *= (mana / 10);
+        return damamge;
+    }
+    int minionki{
+        damage *= 5;//zrobić szansę do x5 x2 itd.
+        return damamge;
+    }
+    int blok{
+        //mana -= 10;
+        //stamina -= 20;
+        def += 30;
+        return def;
+    }
+};
+
+struct enemy{
+    string skill;
+    int HP;
+    int mana;
+    int stamina;
+    int damage;
+    int lucky;
+};
+
+int main()
+{
+    postac Wiesniak, Mag, Wojownik, Lowca, Rolnik, Kot, Archer;
+    enemy Giant, Witch, Goblin, szczur, ghost, wilk, niedzwiedz, karakal, krokodyl, Bandyta;
+    Wiesniak.skill = "Nie ma ;c";
+    Wiesniak.HP = 85;
+    Wiesniak.mana = 0;
+    Wiesniak.stamina = 90;
+    Wiesniak.damamge = 30;
+    Wiesniak.lucky = 40;
+    Wiesniak.gold = 0;
+
+    Mag.skill = "regeneracja++";
+    Mag.HP = 72;
+    Mag.mana = 105;
+    Mag.stamina = 50;
+    Mag.damamge = 15;
+    Mag.lucky = 66;
+    Mag.gold = 0;
+
+    Wojownik.skill = "czolg";
+    Wojownik.HP = 125;
+    Wojownik.mana = 10;
+    Wojownik.stamina = 90;
+    Wojownik.damamge = 52;
+    Wojownik.lucky = 55;
+    Wojownik.gold = 0;
+
+    Lowca.skill = "termowizja";
+    Lowca.HP = 80;
+    Lowca.mana = 85;
+    Lowca.stamina = 60;
+    Lowca.damamge = 40;
+    Lowca.lucky = 60;
+    Lowca.gold = 0;
+
+    Rolnik.skill = "Nie ma ;c";
+    Rolnik.HP = 80;
+    Rolnik.mana = 5;
+    Rolnik.stamina = 50;
+    Rolnik.damamge = 20;
+    Rolnik.lucky = 50;
+    Rolnik.gold = 0;
+
+    Kot.skill = "KARRR";
+    Kot.HP = 30;
+    Kot.mana = 90;
+    Kot.stamina = 100;
+    Kot.damamge = 60;
+    Kot.lucky = 80;
+    Kot.gold = 0;
+
+    Archer.skill = "Nie ma ;c";
+    Archer.HP = 80;
+    Archer.mana = 80;
+    Archer.stamina = 40;
+    Archer.damamge = 20;
+    Archer.lucky = 50;
+    Archer.gold = 0;
+
+    Giant.skill = "czolg++";
+    Giant.HP = 150;
+    Giant.mana = 20;
+    Giant.stamina = 95;
+    Giant.damage = 28;
+    Giant.lucky = 10;
+
+    Witch.skill = "regeneracja";
+    Witch.HP = 65;
+    Witch.mana = 100;
+    Witch.stamina = 40;
+    Witch.damage = 15;
+    Witch.lucky = 11;
+
+    Goblin.skill = "minionki";
+    Goblin.HP = 20;
+    Goblin.mana = 10;
+    Goblin.stamina = 15;
+    Goblin.damage = 5;
+    Goblin.lucky = 5;
+
+    szczur.skill = "nie ma ;c";
+    szczur.HP = 6;
+    szczur.mana = 1;
+    szczur.stamina = 5;
+    szczur.damage = 1;
+    szczur.lucky = 1;
+
+    ghost.skill = "niewidoczny";
+    ghost.HP = 15;
+    ghost.mana = 5;
+    ghost.stamina = 60;
+    ghost.damage = 9;
+    ghost.lucky = 40;
+
+    wilk.skill = "nie ma ;c";
+    wilk.HP = 20;
+    wilk.mana = 0;
+    wilk.stamina = 20;
+    wilk.damage = 20;
+    wilk.lucky = 5;
+
+    niedzwiedz.skill = "blok";
+    niedzwiedz.HP = 150;
+    niedzwiedz.mana = 10;
+    niedzwiedz.stamina = 50;
+    niedzwiedz.damage = 40;
+    niedzwiedz.lucky = 30;
+
+    karakal.skill = "FLOPPA";
+    karakal.HP = 100;
+    karakal.mana = 0;
+    karakal.stamina = 20;
+    karakal.damage = 10;
+    karakal.lucky = 50;
+
+    krokodyl.skill = "nie ma ;c";
+    krokodyl.HP = 99;
+    krokodyl.mana = 0;
+    krokodyl.stamina = 10;
+    krokodyl.damage = 33;
+    krokodyl.lucky = 10;
+
+    Bandyta.skill = "kradnie gold";
+    Bandyta.HP = 40;
+    Bandyta.mana = 10;
+    Bandyta.stamina = 20;
+    Bandyta.damage = 5;
+    Bandyta.lucky = 40;
+}
+
+/*zaprojektuj menu gry z wyborem klas bohaterów. Utwórz trzy klasy bohaterów Mag, Wojownik, Łowca z cechami takimi jak HP, Mana, Stamina, Basic_attack oraz skille dla nich.*/
